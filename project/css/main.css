@@ -1,0 +1,59 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(74, 74, 187);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+header > .item{
+    margin: 15px;
+}
+body{
+    background: url('../img/bg.jpg');
+}
+.arena{
+    width: 100%;
+    height: 100%;
+}
+.meteor, .money, .rocket{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.meteor{
+    background: url('../img/meteor.png');
+    background-size: 100% 100%;
+    top: 80%;
+    left: 40%;
+    animation: meteo 10s ease-in-out infinite;
+    transition: top 0.2s;
+}
+.money{
+    background: url('../img/money.png');
+    background-size: 100% 100%;
+    transition: top 0.2s;
+}
+.rocket{
+    top: 80%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    background: url('../img/rocket.png');
+    background-size: 100% 100%;
+    transition: left 0.2s;
+}
+
+@keyframes meteo{
+    from { 
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+
+    }
+}
