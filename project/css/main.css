@@ -15,10 +15,12 @@ header > .item{
 }
 body{
     background: url('../img/bg.jpg');
+    overflow: hidden;
 }
 .arena{
     width: 100%;
-    height: 100%;
+    height: 800px;
+    overflow: hidden;
 }
 .meteor, .money, .rocket{
     position: absolute;
@@ -28,21 +30,22 @@ body{
 .meteor{
     background: url('../img/meteor.png');
     background-size: 100% 100%;
-    top: 80%;
-    left: 40%;
+    top: -100px;
+    left: 0;
     animation: meteo 10s ease-in-out infinite;
     transition: top 0.2s;
 }
 .money{
     background: url('../img/money.png');
     background-size: 100% 100%;
-    transition: top 0.2s;
+    top: -100px;
+    left: 0;
 }
 .rocket{
     top: 80%;
     left: 40%;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
     background: url('../img/rocket.png');
     background-size: 100% 100%;
     transition: left 0.2s;
@@ -56,4 +59,20 @@ body{
         transform: rotate(720deg);
 
     }
+}
+.pause, .start{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.562);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 45%;
+    z-index: 12;
+}
+
+.pause{
+    display: none;
 }
