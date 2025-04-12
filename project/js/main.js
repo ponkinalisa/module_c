@@ -60,7 +60,7 @@ class Rocket{
         }
         this.body.style.left = this.x + 'px';
     }
-    end(){
+    end(){/*
         // Функция, которая отправляет результат на сервер
 async function sendScoreToServer(score) {
     // Получаем текущее время в формате ISO 8601
@@ -72,7 +72,7 @@ async function sendScoreToServer(score) {
       timestamp: timestamp
     };
   
-    try {/*
+    try {
       // Отправка POST-запроса с использованием fetch
       const response = await fetch('http://localhost:8082/api/score', {
         method: 'POST', // HTTP-метод
